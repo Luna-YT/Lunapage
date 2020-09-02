@@ -1,10 +1,9 @@
 <div style="margin: 0px auto; height: 213; width:509px;border:1px solid gray;padding:8px;background:#e1efbb url('https://www.w3schools.com/css/mountain.jpg')">
 <center><h1>Luna-Web</h1></center>
 </div>
+<audio style="display: none" id="myAudio" controls>
+  <source src="MusicaRara.mp3" type="audio/mpeg">
+</audio>
 <script>
-var audio = new Audio('MusicaRara.mp3');
 document.getElementById("audio").loop = true;
-setTimeout(()=>{
-  audio.play();
-}, 100);
 </script>
