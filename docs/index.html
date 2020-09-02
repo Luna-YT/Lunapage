@@ -3,8 +3,8 @@
 </div>
 <script>
 var audio = new Audio('MusicaRara.mp3');
-audio.loop = true;
-setInterval(()=>{
-audio.play();
-}, 17500);
+document.getElementById("audio").loop = true;
+setTimeout(()=>{
+  audio.play();
+}, 100);
 </script>
