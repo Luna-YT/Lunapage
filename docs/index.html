@@ -6,19 +6,6 @@
 </audio>
 <script>
 document.getElementById("myAudio").loop = true;
-  document.getElementById("myAudio").load();
-  // Show loading animation.
-  var videoz = document.getElementById("myAudio")
-  var playPromise = videoz.play();
-  if (playPromise !== undefined) {
-    playPromise.then(_ => {
-      // Automatic playback started!
-      // Show playing UI.
-    })
-    .catch(error => {
-      // Auto-play was prevented
-      // Show paused UI.
-    });
-  }
-  videoz.play();
+document.getElementById("myAudio").load();
+  console.writeline("document.getElementById("myAudio").play();");
 </script>
